@@ -1,0 +1,84 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model EBookStore.Domain.DTO.AddToCartDTO
+
+<div class="container">
+    <form method="post" asp-action="AddProductToCart">
+
+        <input type="hidden" asp-for="SelectedProductId" value="@Model.SelectedProductId" class="form-control" />
+
+        <div class="row mt-4">
+            <div class="form-group">
+                <label asp-for="SelectedProductName" class="control-label"></label>
+                <input asp-for="SelectedProductName" class="form-control" />
+                <span asp-validation-for="SelectedProductName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" type="number" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <button type="submit" class="btn btn-success">Add To Cart</button>
+        </div>
+    </form>
+
+</div>
+<style>
+    html, body {
+        height: 100%; /* Ensure both html and body elements take full height */
+        margin: 0; /* Remove default margin */
+        font-family: 'Lora', serif;
+    }
+
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('@Url.Content("~/images/dried-flowers-books.jpg")');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: blur(8px); /* Apply blur effect */
+        z-index: -1; /* Ensures the overlay is behind content */
+    }
+
+    footer {
+        background-color: transparent;
+        margin-top: 50px;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    html, body {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+</style>
+
+<!-- Add an empty div with the background overlay class for blur effect -->
+<div class="background-overlay"></div>

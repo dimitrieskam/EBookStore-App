@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Web", "EBookStore.Web\EBookStore.Web.csproj", "{2ABF5A9A-AEF9-44F7-AA21-90BBACF12072}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Service", "EBookStore.Service\EBookStore.Service.csproj", "{5F30EF73-59D0-43BB-BE24-EE8395F58F1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Repository", "EBookStore.Repository\EBookStore.Repository.csproj", "{3750F8D6-7AA1-4A68-A60A-D575617D6701}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EBookStore.Domain", "EBookStore.Domain\EBookStore.Domain.csproj", "{D5FAB68E-AB26-4605-ACDD-6E112E01A399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBookStoreProjectAdmin", "..\EBookStoreProjectAdmin\EBookStoreProjectAdmin.csproj", "{CD49BC7D-E714-4D73-956B-9C1D29A5F96F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EBookStore", "EBookStore", "{FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}"
+	ProjectSection(SolutionItems) = preProject
+		EBookStore.Web\docker-compose.yaml = EBookStore.Web\docker-compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ABF5A9A-AEF9-44F7-AA21-90BBACF12072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ABF5A9A-AEF9-44F7-AA21-90BBACF12072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ABF5A9A-AEF9-44F7-AA21-90BBACF12072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ABF5A9A-AEF9-44F7-AA21-90BBACF12072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F30EF73-59D0-43BB-BE24-EE8395F58F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F30EF73-59D0-43BB-BE24-EE8395F58F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F30EF73-59D0-43BB-BE24-EE8395F58F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F30EF73-59D0-43BB-BE24-EE8395F58F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3750F8D6-7AA1-4A68-A60A-D575617D6701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3750F8D6-7AA1-4A68-A60A-D575617D6701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3750F8D6-7AA1-4A68-A60A-D575617D6701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3750F8D6-7AA1-4A68-A60A-D575617D6701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FAB68E-AB26-4605-ACDD-6E112E01A399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FAB68E-AB26-4605-ACDD-6E112E01A399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FAB68E-AB26-4605-ACDD-6E112E01A399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FAB68E-AB26-4605-ACDD-6E112E01A399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD49BC7D-E714-4D73-956B-9C1D29A5F96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD49BC7D-E714-4D73-956B-9C1D29A5F96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD49BC7D-E714-4D73-956B-9C1D29A5F96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD49BC7D-E714-4D73-956B-9C1D29A5F96F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ABF5A9A-AEF9-44F7-AA21-90BBACF12072} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
+		{5F30EF73-59D0-43BB-BE24-EE8395F58F1E} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
+		{3750F8D6-7AA1-4A68-A60A-D575617D6701} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
+		{D5FAB68E-AB26-4605-ACDD-6E112E01A399} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A88A0AB-644B-49F6-B2C2-FD16E8DDAECF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,123 @@
+﻿@model EBookStore.Domain.Domain.Book
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Book</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookCover" class="control-label"></label>
+                <input asp-for="BookCover" class="form-control" />
+                <span asp-validation-for="BookCover" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuantityAvaiable" class="control-label"></label>
+                <input asp-for="QuantityAvaiable" class="form-control" />
+                <span asp-validation-for="QuantityAvaiable" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublisherId" class="control-label"></label>
+                <select asp-for="PublisherId" class="form-control" asp-items="ViewBag.PublisherId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthorId" class="control-label"></label>
+                <select asp-for="AuthorId" class="form-control" asp-items="ViewBag.AuthorId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<style>
+    html, body {
+        height: 100%; /* Ensure both html and body elements take full height */
+        margin: 0; /* Remove default margin */
+        font-family: 'Lora', serif;
+    }
+
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('@Url.Content("~/images/dried-flowers-books.jpg")');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: blur(8px); /* Apply blur effect */
+        z-index: -1; /* Ensures the overlay is behind content */
+    }
+
+    footer {
+        background-color: transparent;
+        margin-top: 30px;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    html, body {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+</style>
+
+<!-- Add an empty div with the background overlay class for blur effect -->
+<div class="background-overlay"></div>

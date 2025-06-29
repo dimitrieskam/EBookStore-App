@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANpdN4N+Pl0ijHdQGrPPkHQAAAAACAAAAAAAQZgAAAAEAACAAAAAJuum7Ju3/1mWHTYRZD4SrXIx0PHaXxuZm6kEczbxqZAAAAAAOgAAAAAIAACAAAABNZxaNHB8GxduXsOV/wq4nCaFmjCKgECpcrhLGzTQXTIAAAAApwwMYpjG2M4L2X9gudNUUytn6+3i4ZIW9Jsc/aUNc2z5DEW2QwYDwDWpRMaIXyqag3X+oaiTEcIDRGKmwAXX6cwT/+cttE+u0hFap7CMj3ve02fQT5j36x2mXEjr7TgQtgBzvDuU5GyE7LEHVybpxCVhZ2xQUCzg7WbcFfBFjgkAAAACBG+aNThNpcPnfnbpmqnwA1rfRf/dnCE3NsTbj2dMEUkAGsuHRiOpcsYT8iKcBnL9LefRaxQc6CdKBwULuyR/e</EncryptedPassword>
+    <History>True|2025-02-08T00:53:44.1837680Z;True|2025-02-08T01:38:53.3167379+01:00;True|2025-02-08T01:35:43.1408340+01:00;False|2025-02-08T01:31:35.0375023+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=ebookstorewebdbserver.database.windows.net,1433%3bInitial Catalog=EBookStore.Web_db%3bUser ID=dimitrieskam%3bPassword=Test%2a123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="EBookStore.Repository.ApplicationDbContext">
+      <Value>Data Source=ebookstorewebdbserver.database.windows.net,1433%3bInitial Catalog=EBookStore.Web_db%3bUser ID=dimitrieskam%3bPassword=Test%2a123</Value>
+    </EFMigrations>
+    <EFMigrations Include="EBookStore.Repository.HoneyStoreDbContext">
+      <Value>Data Source=ebookstorewebdbserver.database.windows.net,1433%3bInitial Catalog=EBookStore.Web_db%3bUser ID=dimitrieskam%3bPassword=Test%2a123</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

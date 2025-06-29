@@ -1,0 +1,16 @@
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\bin\Release\net8.0\EBookStore.Repository.deps.json
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\bin\Release\net8.0\EBookStore.Repository.dll
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\bin\Release\net8.0\EBookStore.Repository.pdb
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\bin\Release\net8.0\EBookStore.Domain.dll
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\bin\Release\net8.0\EBookStore.Domain.pdb
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.csproj.AssemblyReference.cache
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.AssemblyInfoInputs.cache
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.AssemblyInfo.cs
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.sourcelink.json
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookSto.C68F5B8C.Up2Date
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.dll
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\refint\EBookStore.Repository.dll
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\EBookStore.Repository.pdb
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Repository\obj\Release\net8.0\ref\EBookStore.Repository.dll

@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "restored": true,
+      "restoreTime": "2025-02-08T00:51:46.0342603Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2025-02-08T00:50:37.0765563Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "2c8b2306-0969-4756-af14-649e0c9fce6f"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "EBookStoreWeb20250204000327ResourceGroup"
+    }
+  }
+}

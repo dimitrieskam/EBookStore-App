@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container text-center mt-5">
+    <h1 class="display-3 text-primary">Welcome to EBookStore</h1>
+    <p class="lead">Your one-stop destination for discovering, purchasing, and reading your favorite eBooks.</p>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="@Url.Content("~/images/bookshelf.jpg")" class="card-img-top" alt="Bookshelf">
+
+                <div class="card-body">
+                    <h5 class="card-title">Explore Our Collection</h5>
+                    <p class="card-text">Browse thousands of books from various genres and authors.</p>
+                    <a asp-controller="Books" asp-action="Index" class="btn btn-primary">Browse Books</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="@Url.Content("~/images/authors3.jpg")" class="card-img-top" alt="Authors">
+
+                <div class="card-body">
+                    <h5 class="card-title">Meet the Authors</h5>
+                    <p class="card-text">Learn more about the brilliant minds behind your favorite books.</p>
+                    <a asp-controller="Authors" asp-action="Index" class="btn btn-primary">Discover Authors</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <img src="@Url.Content("~/images/shopping.jpg")" class="card-img-top" alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">Your Shopping Cart</h5>
+                    <p class="card-text">View and manage the books you've added to your cart.</p>
+                    <a asp-controller="ShoppingCarts" asp-action="Index" class="btn btn-primary">View Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-img-top {
+        height: 400px; /* Set a fixed height for all images */
+        object-fit: cover; /* Ensure the image covers the area without stretching */
+    }
+
+</style>

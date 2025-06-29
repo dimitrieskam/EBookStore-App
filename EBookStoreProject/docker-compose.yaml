@@ -1,0 +1,31 @@
+﻿version: '3.8'
+
+services:
+  web:  
+    build:
+      context: .
+      dockerfile: EBookStore.Web/Dockerfile
+      target: final
+    ports:
+      - "8082:80"
+    depends_on:
+      - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=db;Database=EBookStore.Web_db;User Id=sa;Password=EBookStore123!;TrustServerCertificate=True;"
+    restart: unless-stopped
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "EBookStore123!"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    restart: unless-stopped
+
+volumes:
+  sqlserver-data: 

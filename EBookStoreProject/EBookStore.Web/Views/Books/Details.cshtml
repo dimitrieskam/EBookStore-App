@@ -1,0 +1,142 @@
+﻿@model EBookStore.Domain.Domain.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    <div class="row">
+        <!-- Left Column for the Image -->
+        <div class="col-md-4">
+            @if (!string.IsNullOrEmpty(Model.BookCover))
+            {
+                <img src="@Url.Content(Model.BookCover)" alt="Book Cover" class="img-fluid" />
+            }
+            else
+            {
+                <p>No image available</p>
+            }
+        </div>
+
+        <!-- Right Column for the Book Details -->
+        <div class="col-md-8">
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Rating)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Rating)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Genre)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Genre)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.QuantityAvaiable)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.QuantityAvaiable)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Publisher)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Publisher.Name)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Author)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.ActionLink(Model.Author?.Name, "Details", "Authors", new { id = Model.AuthorId }, null)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="Books" asp-action="AddProductToCart" asp-route-id="@Model?.Id" class="btn btn-info">Add to Cart</a> <!-- Add to Cart Button -->
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+<style>
+    html, body {
+        height: 100%; /* Ensure both html and body elements take full height */
+        margin: 0; /* Remove default margin */
+        font-family: 'Lora', serif;
+    }
+
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('@Url.Content("~/images/dried-flowers-books.jpg")');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: blur(8px); /* Apply blur effect */
+        z-index: -1; /* Ensures the overlay is behind content */
+    }
+
+    footer {
+        background-color: transparent;
+        margin-top: 30px;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    html, body {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+</style>
+
+<!-- Add an empty div with the background overlay class for blur effect -->
+<div class="background-overlay"></div>

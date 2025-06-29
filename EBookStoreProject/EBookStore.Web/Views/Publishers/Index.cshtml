@@ -1,0 +1,88 @@
+﻿@model IEnumerable<EBookStore.Domain.Domain.Publisher>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1 class="text-center my-4">Publishers</h1>
+
+<div class="text-center mb-4">
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</div>
+
+<div class="container">
+    <table class="table table-striped table-bordered text-center">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Address)</th>
+                <th>@Html.DisplayNameFor(model => model.Rating)</th>
+                <th>@Html.DisplayNameFor(model => model.MobileNum)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Rating)</td>
+                    <td>@Html.DisplayFor(modelItem => item.MobileNum)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<style>
+    html, body {
+        height: 100%; /* Ensure both html and body elements take full height */
+        margin: 0; /* Remove default margin */
+    }
+
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('@Url.Content("~/images/dried-flowers-books.jpg")');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: blur(8px); /* Apply blur effect */
+        z-index: -1; /* Ensures the overlay is behind content */
+    }
+
+    footer {
+        background-color: transparent;
+        margin-top: 50px;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    html, body {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1;
+    }
+</style>
+
+<!-- Add an empty div with the background overlay class for blur effect -->
+<div class="background-overlay"></div>

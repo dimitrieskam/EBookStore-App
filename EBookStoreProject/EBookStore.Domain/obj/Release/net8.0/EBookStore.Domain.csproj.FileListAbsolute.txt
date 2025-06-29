@@ -1,0 +1,13 @@
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\bin\Release\net8.0\EBookStore.Domain.deps.json
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\bin\Release\net8.0\EBookStore.Domain.dll
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\bin\Release\net8.0\EBookStore.Domain.pdb
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.csproj.AssemblyReference.cache
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.AssemblyInfoInputs.cache
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.AssemblyInfo.cs
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.sourcelink.json
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.dll
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\refint\EBookStore.Domain.dll
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\EBookStore.Domain.pdb
+C:\Users\User5452\Desktop\BookStore_ISProject\EBookStoreProject\EBookStore.Domain\obj\Release\net8.0\ref\EBookStore.Domain.dll

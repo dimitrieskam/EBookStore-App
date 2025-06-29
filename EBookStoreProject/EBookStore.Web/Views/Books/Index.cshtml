@@ -1,0 +1,98 @@
+﻿@model List<EBookStore.Domain.Domain.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1 class="text-center my-4">Books</h1>
+
+<div class="text-center mb-4">
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var item = Model[i];
+
+            if (i % 3 == 0)
+            {
+                @:<div class="row">
+            }
+
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card shadow-sm mb-4" style="width: 38rem; min-height: 40rem;">
+                    <img class="card-img-top" src="@item.BookCover" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">@item.Title</h5>
+                        <p class="card-text text-muted text-justify">@item.Description</p>
+                        <p class="card-text"><strong>Genre:</strong> @item.Genre</p>
+                        <p class="card-text"><strong>Publisher:</strong> @item.Publisher.Name</p>
+                        <p class="card-text"><strong>Author:</strong> @item.Author.Name @item.Author.Surname</p>
+
+                        <h6><strong>Price:</strong> @item.Price Den</h6>
+                        <h6><strong>Rating:</strong> @item.Rating</h6>
+                        <div class="text-center mt-auto">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                            <a asp-controller="Books" asp-action="AddProductToCart" asp-route-id="@item.Id" class="btn btn-sm btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               if(i % 3 == 2)
+             {
+                @:</div>
+             }
+        }
+    </div>
+</div>
+<style>
+    html, body {
+        height: 100%; /* Ensure both html and body elements take full height */
+        margin: 0; /* Remove default margin */
+        font-family: 'Lora', serif;
+    }
+
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('@Url.Content("~/images/dried-flowers-books.jpg")');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: blur(8px); /* Apply blur effect */
+        z-index: -1; /* Ensures the overlay is behind content */
+    }
+    footer {
+    background-color: transparent;
+    margin-top: 30px;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+html, body {
+    height: auto;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; 
+}
+
+</style>
+
+<!-- Add an empty div with the background overlay class for blur effect -->
+<div class="background-overlay"></div>
