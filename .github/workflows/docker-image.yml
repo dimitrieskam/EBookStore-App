@@ -27,7 +27,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: EBookStore.Web/Dockerfile
+          context: ./EBookStoreProject
+          file: ./EBookStoreProject/EBookStore.Web/Dockerfile
           push: true
           tags: marijadimitrieska/ebook-application:latest
