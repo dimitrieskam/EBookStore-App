@@ -1,0 +1,47 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ebookstore-ingress
+  namespace: ebookstore
+  # Remove rewrite-target annotation if your app expects full paths as-is
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: ebookstore.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ebookstore-service
+            port:
+              number: 80
+      - path: /Authors
+        pathType: Prefix
+        backend:
+          service:
+            name: ebookstore-service
+            port:
+              number: 80
+      - path: /Books
+        pathType: Prefix
+        backend:
+          service:
+            name: ebookstore-service
+            port:
+              number: 80
+      - path: /Publishers
+        pathType: Prefix
+        backend:
+          service:
+            name: ebookstore-service
+            port:
+              number: 80
+      - path: /ShoppingCarts
+        pathType: Prefix
+        backend:
+          service:
+            name: ebookstore-service
+            port:
+              number: 80

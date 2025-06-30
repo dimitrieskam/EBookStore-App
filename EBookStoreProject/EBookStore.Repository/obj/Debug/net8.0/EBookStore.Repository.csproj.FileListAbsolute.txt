@@ -93,3 +93,4 @@ C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Repository
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Repository\obj\Debug\net8.0\refint\EBookStore.Repository.dll
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Repository\obj\Debug\net8.0\EBookStore.Repository.pdb
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Repository\obj\Debug\net8.0\ref\EBookStore.Repository.dll
+C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Repository\obj\Debug\net8.0\EBookStore.Repository.sourcelink.json

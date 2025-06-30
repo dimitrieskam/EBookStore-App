@@ -105,3 +105,4 @@ C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Service\ob
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Service\obj\Debug\net8.0\refint\EBookStore.Service.dll
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Service\obj\Debug\net8.0\EBookStore.Service.pdb
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Service\obj\Debug\net8.0\ref\EBookStore.Service.dll
+C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Service\obj\Debug\net8.0\EBookStore.Service.sourcelink.json

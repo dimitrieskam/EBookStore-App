@@ -18,6 +18,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EBookStore", "EBookStore", 
 		EBookStore.Web\docker-compose.yaml = EBookStore.Web\docker-compose.yaml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{D440B7B0-1D5B-4B2E-B33D-1D1320EAD6C1}"
+	ProjectSection(SolutionItems) = preProject
+		configmap-app.yaml = configmap-app.yaml
+		configmap-db.yaml = configmap-db.yaml
+		deployment-app.yaml = deployment-app.yaml
+		ingress.yaml = ingress.yaml
+		namespace.yaml = namespace.yaml
+		secret-app.yaml = secret-app.yaml
+		secret-db.yaml = secret-db.yaml
+		service-app.yaml = service-app.yaml
+		service-db.yaml = service-db.yaml
+		statefulset-db.yaml = statefulset-db.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +67,7 @@ Global
 		{5F30EF73-59D0-43BB-BE24-EE8395F58F1E} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
 		{3750F8D6-7AA1-4A68-A60A-D575617D6701} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
 		{D5FAB68E-AB26-4605-ACDD-6E112E01A399} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
+		{D440B7B0-1D5B-4B2E-B33D-1D1320EAD6C1} = {FA2EB5F1-8C47-48CC-B9F1-D68B5F5F5028}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A88A0AB-644B-49F6-B2C2-FD16E8DDAECF}

@@ -75,3 +75,4 @@ C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Domain\obj
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Domain\obj\Debug\net8.0\refint\EBookStore.Domain.dll
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Domain\obj\Debug\net8.0\EBookStore.Domain.pdb
 C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Domain\obj\Debug\net8.0\ref\EBookStore.Domain.dll
+C:\Users\User5452\Desktop\EBookStore-App\EBookStoreProject\EBookStore.Domain\obj\Debug\net8.0\EBookStore.Domain.sourcelink.json
