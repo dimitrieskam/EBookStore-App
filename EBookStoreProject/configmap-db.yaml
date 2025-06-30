@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-    name: db-config
-    namespace: ebookstore
-data:
-    ACCEPT_EULA: "Y"
-    MSSQL_PID: "Express"
